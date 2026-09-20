@@ -1,0 +1,14 @@
+{
+  "figmaFile": "a2HFViaYnZXH76IoaLRBCZ",
+  "desktopNode": "211:2",
+  "mobileNode": "213:50",
+  "product-desktop.png": "https://www.figma.com/api/mcp/asset/21c40802-6cf3-42d4-8a8e-2339305655c3.png",
+  "product-mobile.png": "https://www.figma.com/api/mcp/asset/05292b15-eb99-41e1-ad68-6127edd6c341.png",
+  "mark.png": "https://www.figma.com/api/mcp/asset/4aa6c4a8-a295-4fa7-805f-87fca382f720.png",
+  "arrow.svg": "https://www.figma.com/api/mcp/asset/14d48062-5f64-4980-9754-970d17a807ea.svg",
+  "sharedAssets": {
+    "Roboto.ttf": "../../assets/Roboto.ttf",
+    "mark.png": "../../assets/mark.png",
+    "product-mobile.png": "product-desktop.png (identical bytes)"
+  }
+}

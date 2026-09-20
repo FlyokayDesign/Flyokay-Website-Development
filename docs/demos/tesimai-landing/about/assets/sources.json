@@ -1,0 +1,8 @@
+{
+  "fileKey": "a2HFViaYnZXH76IoaLRBCZ",
+  "desktopNode": "211:134",
+  "mobileNode": "213:126",
+  "company": {"path": "../../assets/card-building.png", "node": "211:157", "mobileNode": "213:134", "sha256": "17c9a1c3efb8fde14c32c50f7bb184a58ec09c7f45560a6be4ba50b45b362ac6"},
+  "reliable.svg": {"node": "211:148"},
+  "durability.svg": {"node": "211:142"}
+}

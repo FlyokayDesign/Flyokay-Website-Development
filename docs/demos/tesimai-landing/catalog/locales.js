@@ -1,0 +1,15 @@
+/* Preview translations; English remains the approved Figma source copy. */
+window.TESIMAI_CATALOG_LOCALES={
+EN:{label:'Product Catalog',desktopHeading:'Our products deliver field-tested durability, efficiency, and long-term performance worldwide at scale.',mobileHeading:'Choose us to reduce operational costs and gain sales independence. Trust a partner that can deliver reliable, high-performance solutions.',description:'Supports demanding operations with powerful energy output over time.',name:'Flying Orb',subtitle:'CAPACITY',cta:'Get in touch',select:'Select',current:'Current',open:'Open',product:'Product',of:'of'},
+ES:{label:'Catálogo de productos',desktopHeading:'Nuestros productos ofrecen durabilidad, eficiencia y rendimiento a largo plazo, probados en todo el mundo.',mobileHeading:'Elígenos para reducir costes operativos y ganar independencia comercial. Confía en un socio que ofrece soluciones fiables y de alto rendimiento.',description:'Respalda operaciones exigentes con una potente producción de energía sostenida.',name:'Orbe volador',subtitle:'CAPACIDAD',cta:'Contáctanos',select:'Seleccionar',current:'Actual',open:'Abrir',product:'Producto',of:'de'},
+FR:{label:'Catalogue de produits',desktopHeading:'Nos produits offrent une durabilité éprouvée, une grande efficacité et des performances durables à grande échelle.',mobileHeading:'Choisissez-nous pour réduire vos coûts et gagner en autonomie commerciale. Faites confiance à un partenaire qui propose des solutions fiables et performantes.',description:'Accompagne les opérations exigeantes grâce à une puissance énergétique durable.',name:'Orbe volant',subtitle:'CAPACITÉ',cta:'Contactez-nous',select:'Sélectionner',current:'Actuel',open:'Ouvrir',product:'Produit',of:'sur'},
+'ZH-CN':{label:'产品目录',desktopHeading:'我们的产品经过实地验证，在全球范围提供耐用、高效且持久稳定的性能。',mobileHeading:'选择我们，降低运营成本，提升销售自主性。与值得信赖的伙伴合作，获得可靠、高性能的解决方案。',description:'以持续强劲的能量输出，支持高要求的运行任务。',name:'飞行球',subtitle:'性能',cta:'联系我们',select:'选择',current:'当前',open:'打开',product:'产品',of:'共'},
+'ZH-TW':{label:'產品目錄',desktopHeading:'我們的產品經過實地驗證，在全球範圍提供耐用、高效且持久穩定的效能。',mobileHeading:'選擇我們，降低營運成本，提升銷售自主性。與值得信賴的夥伴合作，獲得可靠、高效能的解決方案。',description:'以持續強勁的能量輸出，支援高要求的運作任務。',name:'飛行球',subtitle:'效能',cta:'聯絡我們',select:'選擇',current:'目前',open:'開啟',product:'產品',of:'共'},
+JA:{label:'製品カタログ',desktopHeading:'当社の製品は、世界中で実証された耐久性、効率性、長期的な性能を提供します。',mobileHeading:'運用コストを削減し、販売の自立性を高めましょう。信頼できるパートナーが、高性能で確かなソリューションをお届けします。',description:'持続的で力強いエネルギー出力により、要求の厳しい運用を支えます。',name:'フライングオーブ',subtitle:'性能',cta:'お問い合わせ',select:'選択',current:'現在',open:'開く',product:'製品',of:'/'}
+};
+TESIMAI_I18N.register('catalog',locale=>{
+ const t=TESIMAI_CATALOG_LOCALES[locale],data=TESIMAI_CATALOG_CONTENT;
+ data.label=t.label;data.desktopHeading=t.desktopHeading;data.mobileHeading=t.mobileHeading;data.desktopDescription=[t.description,t.description,t.description].join(' ');data.cta=t.cta;data.ui=t;
+ data.products.forEach(p=>{p.name=t.name;p.subtitle=t.subtitle;p.description=t.description});
+ TESIMAI_CATALOG.refresh();
+});

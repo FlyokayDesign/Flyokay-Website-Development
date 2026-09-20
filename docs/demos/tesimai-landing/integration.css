@@ -1,0 +1,14 @@
+html,body{background:#FFFFFF}
+#catalog{scroll-margin-top:110px}
+@media(max-width:899px){#catalog{scroll-margin-top:64px}}
+/* Measured dropdown geometry, shared with its two connecting shoulders. */
+@media(min-width:900px){
+#header.open{border-bottom-left-radius:var(--join-left-radius,22px);border-bottom-right-radius:var(--join-right-radius,22px)}
+#header #desktop-panel:not([hidden]){left:var(--drop-left);right:auto;width:var(--drop-width);top:calc(var(--nav-height,110px) - 16px)}
+#header.open:has(#desktop-panel)::before,#header.open:has(#desktop-panel)::after{top:calc(var(--nav-height,110px) - 1px)}
+#header.open:has(#desktop-panel)::before{left:calc(var(--drop-left) - 22px);right:auto}
+#header.open:has(#desktop-panel)::after{left:calc(var(--drop-left) + var(--drop-width) - 1px);right:auto}
+}
+/* Preserve readable content when translated copy takes additional lines. */
+.catalog-card.is-active .catalog-info h3{white-space:normal}
+@media(max-width:899px){.catalog-info h3{white-space:normal}.catalog-copy h2{min-height:51px}}
