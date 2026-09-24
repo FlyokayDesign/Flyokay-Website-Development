@@ -56,7 +56,8 @@
   }
   function openDetail(product) {
     if (!product.detailUrl) return;
-    const url = new URL(product.detailUrl,location.href);
+    let url;
+    try { url = new URL(product.detailUrl,location.href); } catch { return; }
     if (!['http:','https:','file:'].includes(url.protocol)) return;
     const event = new CustomEvent('catalog:navigate',{bubbles:true,cancelable:true,detail:{productId:product.id,url:product.detailUrl}});
     if (section.dispatchEvent(event)) location.assign(product.detailUrl);
