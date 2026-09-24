@@ -41,7 +41,7 @@
 #menu .is-search [data-back] img{width:12px;height:7px;transform:rotate(90deg);opacity:.65}
 .mobile-search-title{font-size:30px;line-height:36px;letter-spacing:-.7px;font-weight:500;margin:0;color:#111}
 #menu .is-search .search-field{flex:none;padding:0 18px;min-height:54px;background:#f3f3f3;border-radius:22px}
-#menu .is-search .search-field input{font-size:15px;height:54px}
+#menu .is-search .search-field input{font-size:16px;height:54px}
 #menu .is-search .results{padding:24px 2px 12px;min-height:0;max-height:none;overflow:auto;flex:1}
 #menu .is-search .results>p:first-child{font-size:14px;line-height:22px;font-weight:500;color:#333;margin:0 0 6px}
 #menu .is-search .results>p+p{font-size:13px;line-height:20px;color:#777;margin:0;max-width:280px}
