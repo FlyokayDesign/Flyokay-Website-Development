@@ -11,3 +11,4 @@
 
 .contact[data-keyboard-focus] .contact-control:has(input[role="combobox"]:focus-visible){box-shadow:inset 0 0 0 1px #747474}
 .contact[data-keyboard-focus] input[role="combobox"]:focus-visible::placeholder{color:#1f1f1f}
+.contact[data-keyboard-focus] :is([data-field="business"],[data-field="source"]) input:not([readonly]):focus-visible::placeholder{color:transparent}
