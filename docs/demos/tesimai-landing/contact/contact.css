@@ -8,3 +8,6 @@
 @media(prefers-reduced-motion:reduce){.contact *{transition:none!important}.contact[data-entrance] :is(.contact-label,h2,.contact-description,.contact-methods,.contact-form,.contact-field,.contact-submit){opacity:1!important;translate:none!important;scale:none!important}}
 
 .contact-select.opens-up .contact-options{top:auto;bottom:100%;border-radius:22px 22px 0 0}.contact-select.is-open.opens-up .contact-control{border-radius:0 0 22px 22px}.contact-select.is-open.opens-up input{border-top-left-radius:0;border-top-right-radius:0;border-bottom-left-radius:22px}
+
+.contact[data-keyboard-focus] .contact-control:has(input[role="combobox"]:focus-visible){box-shadow:inset 0 0 0 1px #747474}
+.contact[data-keyboard-focus] input[role="combobox"]:focus-visible::placeholder{color:#1f1f1f}

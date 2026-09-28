@@ -38,7 +38,7 @@
 .catalog-info h3{font-size:28px;line-height:28px;font-weight:500;white-space:nowrap}
 .catalog-subtitle{font-size:16px;line-height:16px;margin-top:5px}.catalog-description{font-size:11px;line-height:13px;width:150px;margin-top:42px}
 .catalog-pagination{height:35px;display:flex;justify-content:center;align-items:center;position:relative;isolation:isolate}
-.catalog-dot{width:8px;height:35px;flex:none;border:0;padding:0;background:none;display:grid;place-items:center;cursor:pointer;position:relative}
+.catalog-dot{width:24px;height:35px;flex:none;border:0;padding:0;background:none;display:grid;place-items:center;cursor:pointer;position:relative}
 .catalog-dot:before{content:'';width:4px;height:4px;border-radius:50%;background:#999;pointer-events:none}.catalog-dot[aria-current=true]:before{background:#111}
 .catalog-pagination{cursor:pointer;touch-action:manipulation}
 .catalog-divider{margin:0 24px 0 25px;height:1px}

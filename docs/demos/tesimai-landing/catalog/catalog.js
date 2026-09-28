@@ -77,7 +77,7 @@
   pagination.addEventListener('click',e => {
     const button = e.target.closest('.catalog-dot');
     let next = button ? Number(button.dataset.index) : 0;
-    if (!button) {
+    if (!button || e.detail > 0) {
       let distance = Infinity;
       dots.forEach((dot,i) => {const r=dot.getBoundingClientRect();const d=Math.abs(e.clientX-r.x-r.width/2);if(d<distance){next=i;distance=d;}});
     }
